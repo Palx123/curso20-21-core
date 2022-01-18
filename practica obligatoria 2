@@ -1,0 +1,37 @@
+class Coche:
+  def __init__(self, color, marca, modelo, puertas, matricula):
+    self.color = color
+    self.marca = marca
+    self.modelo = modelo
+    self.puertas = puertas
+    self.matricula = matricula
+
+  def mostrarDatos(self):
+    print(self.color)
+    print(self.marca)
+    print(self.modelo)
+    print(self.puertas)
+    print(self.matricula)
+
+coche1 = Coche("Rojo", "Seat", "Ibiza", 1, "1234AB")
+coche2 = Coche("Azul", "Ford", "Fiesta", 2, "2345CD")
+coche3 = Coche("Verde", "Toyota", "Corolla", 3, "3456EF")
+coche4 = Coche("Amarillo", "Citroen", "C4", 4, "4567GH")
+coche5 = Coche("Rosa", "Opel", "Corsa", 5, "5678IJ")
+
+coche1.color = "Celeste"
+coche2.marca = "Test"
+coche3.modelo = "Yaris"
+coche4.puertas = 6
+coche5.matricula = "6789KL"
+
+coche1.mostrarDatos()
+print("----------------")
+coche2.mostrarDatos()
+print("----------------")
+coche3.mostrarDatos()
+print("----------------")
+coche4.mostrarDatos()
+print("----------------")
+coche5.mostrarDatos()
+print("----------------")
