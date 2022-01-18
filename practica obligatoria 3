@@ -1,0 +1,54 @@
+class Tiempo:
+  def __init__(self, hora, minuto=None, segundo=None):
+    self.__hora = hora
+    if minuto!=None:
+      self.__minuto = minuto
+
+    if segundo!=None:
+      self.__segundo = segundo
+
+  def setHora(self, hora):
+    self.__hora = hora
+
+  def getHora(self):
+    return self.__hora
+
+  def setMinuto(self, minuto):
+    self.__hora = minuto
+
+  def getMinuto(self):
+    return self.__minuto
+
+  def setSegundo(self, segundo):
+    self.__segundo = segundo
+
+  def getSegundo(self):
+    return self.__segundo
+
+hora1 = Tiempo(1, 15, 10)
+hora2 = Tiempo(2, 30)
+hora3 = Tiempo(3)
+
+print("---Hora1---")
+print(hora1.getHora())
+print(hora1.getMinuto())
+print(hora1.getSegundo())
+print("-----------")
+print("---Hora2---")
+print(hora2.getHora())
+print(hora2.getMinuto())
+print("-----------")
+print("---Hora3---")
+print(hora3.getHora())
+print("-----------")
+
+print("---Hora1---")
+hora1.setHora(4)
+print(hora1.getHora())
+print("-----------")
+print("---Hora2---")
+hora2.setHora(5)
+hora2.setSegundo(20)
+print(hora2.getHora())
+print(hora2.getSegundo())
+print("-----------")
